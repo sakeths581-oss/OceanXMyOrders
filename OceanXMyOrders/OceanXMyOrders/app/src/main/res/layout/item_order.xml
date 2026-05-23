@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtVehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Four Wheeler"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#111111"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 229.0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111111"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05 Feb, 4:46 PM"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/txtOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID: #ORD12345"
+            android:textSize="13sp"
+            android:textColor="#555555"/>
+
+        <TextView
+            android:id="@+id/txtPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 741, Gumanwara"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 00, Main Rd, Shivaji Nagar, Jhansi"
+            android:textSize="14sp"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELLED"
+            android:textStyle="bold"
+            android:textColor="#C62828"
+            android:background="#FFEBEE"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invoice"/>
+
+            <Button
+                android:id="@+id/btnBookAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FFD600"
+                android:textColor="#000000"
+                android:text="Book Again"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
